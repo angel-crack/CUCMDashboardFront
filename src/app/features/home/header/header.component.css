@@ -1,0 +1,6 @@
+:host{
+    background-color: var(--header-BkgColor);
+    height: var(--headerHeight);
+    width: calc( 100vw - var(--sidebarWidth));
+    padding: var(--appMargin);
+}

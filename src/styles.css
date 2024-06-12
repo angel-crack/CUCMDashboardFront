@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    /* Defines the outer margin of the application */
+    --appMargin: 0.35rem;
+
+    /* Defines the height of the header */
+    --headerHeight: 10vh;
+
+    /* Defines the width of the side bar */
+    --sidebarWidth: 15vw;
+
+    /* Universal Border Radius */
+    --appBorderRadius: 0.5rem
+
+    /* Note: All other variables that depends on those, will be calculated on the component */
+}
+
+html{
+    /* Defines universal font-size => em & rem depends on */
+    font-size: 4vh;
+
+    /* Background Color Application */
+    background-color: var(--root-BkgColor);
+}
+
+* {
+    /* All elements will be flat */
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    box-sizing: border-box;
+}
+
+
+body *{
+    /* All childs of body will use display block */
+    display: block;
+}

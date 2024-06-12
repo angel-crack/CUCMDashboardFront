@@ -1,0 +1,5 @@
+:host{
+    background-color: var(--sideBar-BkgColor);
+    width: var(--sidebarWidth);
+    height: 100vh;
+}

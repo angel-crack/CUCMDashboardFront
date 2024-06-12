@@ -1,0 +1,11 @@
+:host{    
+    display: flex;
+}
+
+.container{
+    height: 100vh;
+}
+app-main{
+    height: calc(100vh - var(--headerHeight));
+    width: calc(100vw - var(--sidebarWidth));
+}
