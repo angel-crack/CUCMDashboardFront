@@ -1,1 +1,15 @@
-<p>side-bar works!</p>
+<div class="side-nav" [ngClass]="collapsed ? 'side-nav-collapsed' : '' " >
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollape()" >D</button>
+        <div class="logo-text" *ngIf="collapsed">DashBoard</div>
+        <button class="btn-close" *ngIf="collapsed">X</button>
+    </div>
+    <ul class="sidenav-nav" style="display: flex;">
+        <li class="sidenav-nav-item" *ngFor="let option of navData" >
+            <a style="display: flex;" routerLink="{{option.route}}" class="sidenav-nav-link" >
+                <mat-icon fontIcon="{{option.icon}}"></mat-icon>
+                <span class="sidenav-nav-text" *ngIf="collapsed" >{{option.name}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

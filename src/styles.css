@@ -16,7 +16,7 @@
 
 html{
     /* Defines universal font-size => em & rem depends on */
-    font-size: 4vh;
+    font-size: 3vh;
 
     /* Background Color Application */
     background-color: var(--root-BkgColor);
@@ -34,4 +34,20 @@ html{
 body *{
     /* All childs of body will use display block */
     display: block;
+
+    /* Color text for all elements */
+    color: var(--root-txtColor);
+}
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    position: relative;
+}
+
+body a {
+
+    /* Remove underline for links */
+    text-decoration: none;
+
 }

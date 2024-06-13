@@ -3,4 +3,5 @@
     height: var(--headerHeight);
     width: calc( 100vw - var(--sidebarWidth));
     padding: var(--appMargin);
+    /* z-index: 4; */
 }
